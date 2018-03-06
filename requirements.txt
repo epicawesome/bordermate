@@ -1,0 +1,14 @@
+# Django
+django<1.12
+
+# Deploy
+pymysql
+gunicorn
+mysqlclient
+
+# Bot
+pymessenger==0.0.7.0
+requests
+
+# Email
+django-ses==0.8.2
