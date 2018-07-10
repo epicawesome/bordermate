@@ -19,7 +19,6 @@ def send_email_thread(subject='', from_email=settings.DEFAULT_FROM_EMAIL, to=[],
             except: print('Erro!')
 
         text_content = subject
-        print(subject, text_content, from_email, to)
         msg = EmailMultiAlternatives(subject, text_content, from_email, to, headers=headers)
         msg.attach_alternative(html_content, mimetype)
         msg.send()

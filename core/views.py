@@ -227,7 +227,7 @@ class BotView(View):
                                 self.bot.send_button_message(send_id, send_message, buttons)
                                 return HttpResponse("Success")
                             elif message.get('postback', {}).get('payload') == 'SECONDARY_SCREENING' or message.get('message', {}).get('text', '').lower() == u"i’m in secondary screening":
-                                send_message = _(u'OK. Secondary screening is perfectly normal. If you want to know more about your legal rights, here’s a great article: http://www.cnn.com/2017/02/16/us/border-legal-rights-faq-trnd/index.html. And I’m still set to send those emails to let your loved ones know where you are %s from now.' % flight.display_time_to_help() )
+                                send_message = _(u'OK. Secondary screening is perfectly normal. If you want to know more about your legal rights, here’s a great article: http://www.cnn.com/2017/02/16/us/border-legal-rights-faq-trnd/index.html. And I’m still set to send those emails to let your loved ones know where you are %s from now.') % flight.display_time_to_help()
                                 buttons = [
                                     {
                                         "type": "postback",
