@@ -1,0 +1,334 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-10 20:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: core/models.py:72
+msgid "Init"
+msgstr ""
+
+#: core/models.py:73
+msgid "Waiting"
+msgstr ""
+
+#: core/models.py:74
+msgid "Canceled"
+msgstr ""
+
+#: core/models.py:75
+msgid "Arrived"
+msgstr ""
+
+#: core/models.py:76
+msgid "Help"
+msgstr ""
+
+#: core/models.py:77
+msgid "OK"
+msgstr ""
+
+#: core/models.py:78
+msgid "Removed"
+msgstr ""
+
+#: core/models.py:83
+msgid "Flight"
+msgstr ""
+
+#: core/models.py:84
+msgid "Flights"
+msgstr ""
+
+#: core/models.py:87
+msgid "Send id"
+msgstr ""
+
+#: core/models.py:88
+msgid "Send name"
+msgstr ""
+
+#: core/models.py:89
+msgid "Code"
+msgstr ""
+
+#: core/models.py:90
+msgid "Origin"
+msgstr ""
+
+#: core/models.py:91
+msgid "Destination"
+msgstr ""
+
+#: core/models.py:93
+msgid "At"
+msgstr ""
+
+#: core/models.py:94
+msgid "Notify emails"
+msgstr ""
+
+#: core/models.py:96
+msgid "Status"
+msgstr ""
+
+#: core/models.py:97
+msgid "Updated at"
+msgstr ""
+
+#: core/models.py:98
+msgid "Created at"
+msgstr ""
+
+#: core/models.py:122
+#, python-format
+msgid "%s is stuck at the US border"
+msgstr ""
+
+#: core/models.py:147
+msgid ""
+"Hi there, just a friendly reminder that if I don’t hear from you in 2 hours "
+"I’ll email your loved ones to tell them you’re stuck at the border."
+msgstr ""
+
+#: core/models.py:151 core/models.py:176
+msgid "I’m through"
+msgstr ""
+
+#: core/models.py:156 core/models.py:181
+msgid "Help!"
+msgstr ""
+
+#: core/models.py:172
+msgid ""
+"Sorry to keep bugging you, but if you don’t tell me you’re through "
+"immigration I’ll send out emails 1 hour from now."
+msgstr ""
+
+#: core/models.py:188
+msgid ""
+"Alright, seems like you’re stuck, so I’ll just go ahead and email everyone "
+"you chose. I hope everything ends up alright. Good luck!"
+msgstr ""
+
+#: core/templates/email.html:6
+msgid "Hi there,"
+msgstr ""
+
+#: core/templates/email.html:9
+#, python-format
+msgid ""
+"\n"
+"You have gotten this email because %(flight.first_name)s set up an automatic "
+"warning if we couldn’t communicate for 3 hours after the flight "
+"%(flight.first_name)s was on landed. The flight number is %(flight.code)s "
+"and it departed %(flight.destination)s on %(flight.updated_at)s. Odds are "
+"%(flight.first_name)s is stuck at the US border.\n"
+msgstr ""
+
+#: core/templates/email.html:15
+#, python-format
+msgid ""
+"\n"
+"Please try to contact %(flight.first_name)s before anything else. If you "
+"choose to seek legal counsel, the ACLU is a good place to start. Hopefully "
+"this will get sorted out shortly.\n"
+msgstr ""
+
+#: core/templates/email.html:20
+msgid "Good luck."
+msgstr ""
+
+#: core/views.py:33
+msgid "Invalid verification token"
+msgstr ""
+
+#: core/views.py:53
+msgid "Canceled flight record! Would you like to add another?"
+msgstr ""
+
+#: core/views.py:69
+msgid ""
+"Hi! You’re coming to the US? That’s great. And you shouldn’t worry about a "
+"thing. Especially getting stuck at immigration. Just let me know your flight "
+"number, departure date, and who you want to notify if you get stuck."
+msgstr ""
+
+#: core/views.py:73
+msgid "Add flight info"
+msgstr ""
+
+#: core/views.py:78
+msgid "Tell me more"
+msgstr ""
+
+#: core/views.py:89
+msgid "Let's do this. Can you tell me your flight number?"
+msgstr ""
+
+#: core/views.py:93
+msgid ""
+"President Trump's Muslim Ban and its subsequent versions have gotten people "
+"worried about getting stuck at the US border while their loved ones don't "
+"know what happened to them. We think there are better things to worry about. "
+"We'll keep track of your flight and if you can't contact us for 3h after "
+"landing we'll contact your loved ones to tell them you're most likely stuck "
+"at the border."
+msgstr ""
+
+#: core/views.py:97
+msgid "Ok. I understand!"
+msgstr ""
+
+#: core/views.py:111
+msgid ""
+"Sorry, I can only keep track of international flights. Would you like to add "
+"a different flight?"
+msgstr ""
+
+#: core/views.py:121
+#, python-format
+msgid ""
+"Oh, you’re coming from %s? Lovely place. And when is your departure date?"
+msgstr ""
+
+#: core/views.py:125
+msgid "Sorry, you can’t add the flight that the destination is not the US."
+msgstr ""
+
+#: core/views.py:129
+msgid "I don’t understand. So what’s your flight number?"
+msgstr ""
+
+#: core/views.py:141
+msgid "Can you clarify that date?"
+msgstr ""
+
+#: core/views.py:154
+msgid ""
+"Great. Now who do you want to notify if you get stuck? Just type their "
+"emails."
+msgstr ""
+
+#: core/views.py:158
+msgid ""
+"Sorry, that’s a little confusing. Enter MM/DD, please. Try again, or type "
+"\"cancel\" to add another flight."
+msgstr ""
+
+#: core/views.py:168
+#, python-format
+msgid "Please confirm these are the correct addresses? %s"
+msgstr ""
+
+#: core/views.py:177
+msgid "No"
+msgstr ""
+
+#: core/views.py:189
+msgid ""
+"Got it. Here’s how this will work: if I haven’t heard from you for 3 hours "
+"after you landed, I’ll let your people know you’re probably stuck at the "
+"border and might need their help."
+msgstr ""
+
+#: core/views.py:191
+msgid ""
+"You can check back any time for tips on what to expect and do. But most of "
+"all, enjoy your trip to the US!"
+msgstr ""
+
+#: core/views.py:196
+msgid ""
+"Sorry, i don’t understand. Who do you want to notify if you get stuck? Just "
+"type their emails. Try again, or type \"cancel\" to add another flight."
+msgstr ""
+
+#: core/views.py:204
+msgid "Oh, great! Enjoy your trip!"
+msgstr ""
+
+#: core/views.py:209
+msgid "Well, that’s what I’m here for. How can I help you?"
+msgstr ""
+
+#: core/views.py:213
+msgid "I’m in secondary screening"
+msgstr ""
+
+#: core/views.py:218
+msgid "I’m nervous"
+msgstr ""
+
+#: core/views.py:223
+msgid "The line is too long"
+msgstr ""
+
+#: core/views.py:230
+#, python-format
+msgid ""
+"OK. Secondary screening is perfectly normal. If you want to know more about "
+"your legal rights, here’s a great article: http://www.cnn.com/2017/02/16/us/"
+"border-legal-rights-faq-trnd/index.html. And I’m still set to send those "
+"emails to let your loved ones know where you are %s from now."
+msgstr ""
+
+#: core/views.py:234
+msgid "Ok!"
+msgstr ""
+
+#: core/views.py:239
+msgid "Please send emails now"
+msgstr ""
+
+#: core/views.py:247
+msgid ""
+"Just remember border patrol agents are just making sure all your paperwork "
+"is right and that you’re safe to enter the country. It’s inconvenient, but "
+"it will be over soon."
+msgstr ""
+
+#: core/views.py:252
+msgid "That one I can’t help you with. I’m not very patient either."
+msgstr ""
+
+#: core/views.py:259
+#, python-format
+msgid ""
+"Ok, I’m sending emails to (%s) right now. Hopefully you’ll get things "
+"straightened out in no time."
+msgstr ""
+
+#: core/views.py:273
+#, python-format
+msgid "%s successfully added."
+msgstr ""
+
+#: core/views.py:283
+#, python-format
+msgid "%s successfully removed."
+msgstr ""
+
+#: core/views.py:287
+msgid ""
+"Sorry, i don’t understand. If you want to remove or add some email, just "
+"type me ask. Eg: Remove me@bordermate.com. Or Add me@bordermate.com. Or type "
+"\"cancel\" to add another flight."
+msgstr ""
+
+#: core/views.py:295
+msgid "I’m sorry. I have a bug and i needed call my parents."
+msgstr ""
